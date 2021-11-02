@@ -88,17 +88,21 @@ img {
 
 /*Begin Portfolio Gallery Styles*/
 
-.portfolio-gallery {
+.portfolio-container {
   margin: 1rem auto 0 auto;
+}
+
+.portfolio-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 0.5rem;
   grid-auto-rows: 300px;
 }
 
-.portfolio-gallery h1 {
+.portfolio-container h1 {
   font-size: 2rem;
   line-height: 2rem;
+  text-align: center;
 }
 
 .gallery-item {
@@ -117,6 +121,43 @@ img {
   transform: scale(1.5);
 }
 
+/*Begin about section styles*/
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margain: 1rem auto 0 auto;
+}
+
+.about-text {
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.about-text h1 {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.about-image img {
+  height: 100%;
+  object-fit: contain;
+}
+
+.about-social {
+  display: flex;
+  justify-content: start;
+}
+
+.about-social a {
+  color: black;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.about-social a:hover {
+  color: blanchedalmond;
+}
+
 /*Begin Media Queries for Tablets and Desktop */
 
 /*schnoogle doogles*/
@@ -130,6 +171,22 @@ img {
     font-size: 2rem;
     line-height: 2rem;
   }
+  .portfolio-container h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .about-container {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+  .about-text h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .about-text p {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
 }
 
 @media (min-width: 920px) {
@@ -140,5 +197,25 @@ img {
   .hero-text {
     font-size: 3rem;
     line-height: 3rem;
+  }
+  .portfolio-container h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+  .portfolio-container,
+  .about-container {
+    max-width: 1400px;
+  }
+  .about-text h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .about-text p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .about-social a {
+    font-size: 3rem;
+    padding: 0 2rem 2rem 2rem;
   }
 }
