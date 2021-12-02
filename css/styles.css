@@ -17,7 +17,7 @@ html {
 body {
   margin: 0 auto;
   padding: 0;
-  height: 100%;
+  min-height: 100%;
   max-width: 100%;
 }
 *,
@@ -89,7 +89,7 @@ img {
 
 .logo a {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .nav-menu a {
@@ -134,7 +134,7 @@ img {
 }
 
 .section-scroll {
-  scroll-margin-top: 9rem;
+  scroll-margin-top: 11rem;
   padding: 0 0 4rem 0;
 }
 
